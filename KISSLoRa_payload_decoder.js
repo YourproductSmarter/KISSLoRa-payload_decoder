@@ -128,5 +128,5 @@ function Decoder(bytes, port) {
       decode: decode
     };
   }
-  return decode(bytes, [uint8, uint8, uint16, g_force, g_force, g_force], ['humidity', 'temperature','lux', 'x', 'y', 'z']); 
+  return decode(bytes, [uint8, temperature, uint16, g_force, g_force, g_force], ['humidity', 'temperature','lux', 'x', 'y', 'z']); 
 }
